@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9600ECD22337248200594A2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600ECD12337248200594A2B /* AppDelegate.swift */; };
+		9600ECD42337248200594A2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600ECD32337248200594A2B /* SceneDelegate.swift */; };
+		9600ECD62337248200594A2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600ECD52337248200594A2B /* ViewController.swift */; };
+		9600ECD92337248200594A2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9600ECD72337248200594A2B /* Main.storyboard */; };
+		9600ECDC2337248200594A2B /* cloudsync.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9600ECDA2337248200594A2B /* cloudsync.xcdatamodeld */; };
+		9600ECDE2337248300594A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9600ECDD2337248300594A2B /* Assets.xcassets */; };
+		9600ECE12337248300594A2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9600ECDF2337248300594A2B /* LaunchScreen.storyboard */; };
+		9600ECE9233724A600594A2B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600ECE8233724A600594A2B /* DataManager.swift */; };
+		9600ECF12337263B00594A2B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9600ECF02337263B00594A2B /* CloudKit.framework */; };
+		966714D723372CE20036EF17 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966714D523372CE20036EF17 /* Interface.storyboard */; };
+		966714D923372CE40036EF17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966714D823372CE40036EF17 /* Assets.xcassets */; };
+		966714E023372CE40036EF17 /* cloudsyncwatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 966714DF23372CE40036EF17 /* cloudsyncwatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		966714E523372CE40036EF17 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966714E423372CE40036EF17 /* InterfaceController.swift */; };
+		966714E723372CE40036EF17 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966714E623372CE40036EF17 /* ExtensionDelegate.swift */; };
+		966714E923372CE50036EF17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966714E823372CE50036EF17 /* Assets.xcassets */; };
+		966714ED23372CE50036EF17 /* cloudsyncwatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 966714D323372CE20036EF17 /* cloudsyncwatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		966714F823372CF20036EF17 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966714F723372CF20036EF17 /* CloudKit.framework */; };
+		966714F923372D9E0036EF17 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600ECE8233724A600594A2B /* DataManager.swift */; };
+		966714FB23372EEC0036EF17 /* cloudsync.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9600ECDA2337248200594A2B /* cloudsync.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		966714E123372CE40036EF17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9600ECC62337248200594A2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 966714DE23372CE40036EF17;
+			remoteInfo = "cloudsyncwatch Extension";
+		};
+		966714EB23372CE50036EF17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9600ECC62337248200594A2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 966714D223372CE20036EF17;
+			remoteInfo = cloudsyncwatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		966714F123372CE50036EF17 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				966714E023372CE40036EF17 /* cloudsyncwatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966714F523372CE50036EF17 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				966714ED23372CE50036EF17 /* cloudsyncwatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9600ECCE2337248200594A2B /* cloudsync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cloudsync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9600ECD12337248200594A2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9600ECD32337248200594A2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9600ECD52337248200594A2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9600ECD82337248200594A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9600ECDB2337248200594A2B /* cloudsync.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cloudsync.xcdatamodel; sourceTree = "<group>"; };
+		9600ECDD2337248300594A2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9600ECE02337248300594A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9600ECE22337248300594A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9600ECE8233724A600594A2B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		9600ECEE2337263600594A2B /* cloudsync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cloudsync.entitlements; sourceTree = "<group>"; };
+		9600ECF02337263B00594A2B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		966714D323372CE20036EF17 /* cloudsyncwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cloudsyncwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		966714D623372CE20036EF17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		966714D823372CE40036EF17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		966714DA23372CE40036EF17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		966714DF23372CE40036EF17 /* cloudsyncwatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "cloudsyncwatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		966714E423372CE40036EF17 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		966714E623372CE40036EF17 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		966714E823372CE50036EF17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		966714EA23372CE50036EF17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		966714F623372CEE0036EF17 /* cloudsyncwatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "cloudsyncwatch Extension.entitlements"; sourceTree = "<group>"; };
+		966714F723372CF20036EF17 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9600ECCB2337248200594A2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9600ECF12337263B00594A2B /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966714DC23372CE40036EF17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966714F823372CF20036EF17 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9600ECC52337248200594A2B = {
+			isa = PBXGroup;
+			children = (
+				9600ECD02337248200594A2B /* cloudsync */,
+				966714D423372CE20036EF17 /* cloudsyncwatch */,
+				966714E323372CE40036EF17 /* cloudsyncwatch Extension */,
+				9600ECCF2337248200594A2B /* Products */,
+				9600ECEF2337263B00594A2B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9600ECCF2337248200594A2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9600ECCE2337248200594A2B /* cloudsync.app */,
+				966714D323372CE20036EF17 /* cloudsyncwatch.app */,
+				966714DF23372CE40036EF17 /* cloudsyncwatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9600ECD02337248200594A2B /* cloudsync */ = {
+			isa = PBXGroup;
+			children = (
+				9600ECEE2337263600594A2B /* cloudsync.entitlements */,
+				9600ECD12337248200594A2B /* AppDelegate.swift */,
+				9600ECD32337248200594A2B /* SceneDelegate.swift */,
+				9600ECD52337248200594A2B /* ViewController.swift */,
+				9600ECE8233724A600594A2B /* DataManager.swift */,
+				9600ECD72337248200594A2B /* Main.storyboard */,
+				9600ECDD2337248300594A2B /* Assets.xcassets */,
+				9600ECDF2337248300594A2B /* LaunchScreen.storyboard */,
+				9600ECE22337248300594A2B /* Info.plist */,
+				9600ECDA2337248200594A2B /* cloudsync.xcdatamodeld */,
+			);
+			path = cloudsync;
+			sourceTree = "<group>";
+		};
+		9600ECEF2337263B00594A2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				966714F723372CF20036EF17 /* CloudKit.framework */,
+				9600ECF02337263B00594A2B /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		966714D423372CE20036EF17 /* cloudsyncwatch */ = {
+			isa = PBXGroup;
+			children = (
+				966714D523372CE20036EF17 /* Interface.storyboard */,
+				966714D823372CE40036EF17 /* Assets.xcassets */,
+				966714DA23372CE40036EF17 /* Info.plist */,
+			);
+			path = cloudsyncwatch;
+			sourceTree = "<group>";
+		};
+		966714E323372CE40036EF17 /* cloudsyncwatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				966714F623372CEE0036EF17 /* cloudsyncwatch Extension.entitlements */,
+				966714E423372CE40036EF17 /* InterfaceController.swift */,
+				966714E623372CE40036EF17 /* ExtensionDelegate.swift */,
+				966714E823372CE50036EF17 /* Assets.xcassets */,
+				966714EA23372CE50036EF17 /* Info.plist */,
+			);
+			path = "cloudsyncwatch Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9600ECCD2337248200594A2B /* cloudsync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9600ECE52337248300594A2B /* Build configuration list for PBXNativeTarget "cloudsync" */;
+			buildPhases = (
+				9600ECCA2337248200594A2B /* Sources */,
+				9600ECCB2337248200594A2B /* Frameworks */,
+				9600ECCC2337248200594A2B /* Resources */,
+				966714F523372CE50036EF17 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				966714EC23372CE50036EF17 /* PBXTargetDependency */,
+			);
+			name = cloudsync;
+			productName = cloudsync;
+			productReference = 9600ECCE2337248200594A2B /* cloudsync.app */;
+			productType = "com.apple.product-type.application";
+		};
+		966714D223372CE20036EF17 /* cloudsyncwatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 966714F223372CE50036EF17 /* Build configuration list for PBXNativeTarget "cloudsyncwatch" */;
+			buildPhases = (
+				966714D123372CE20036EF17 /* Resources */,
+				966714F123372CE50036EF17 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				966714E223372CE40036EF17 /* PBXTargetDependency */,
+			);
+			name = cloudsyncwatch;
+			productName = cloudsyncwatch;
+			productReference = 966714D323372CE20036EF17 /* cloudsyncwatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		966714DE23372CE40036EF17 /* cloudsyncwatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 966714EE23372CE50036EF17 /* Build configuration list for PBXNativeTarget "cloudsyncwatch Extension" */;
+			buildPhases = (
+				966714DB23372CE40036EF17 /* Sources */,
+				966714DC23372CE40036EF17 /* Frameworks */,
+				966714DD23372CE40036EF17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cloudsyncwatch Extension";
+			productName = "cloudsyncwatch Extension";
+			productReference = 966714DF23372CE40036EF17 /* cloudsyncwatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9600ECC62337248200594A2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = shiningdevelopers;
+				TargetAttributes = {
+					9600ECCD2337248200594A2B = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					966714D223372CE20036EF17 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					966714DE23372CE40036EF17 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 9600ECC92337248200594A2B /* Build configuration list for PBXProject "cloudsync" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9600ECC52337248200594A2B;
+			productRefGroup = 9600ECCF2337248200594A2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9600ECCD2337248200594A2B /* cloudsync */,
+				966714D223372CE20036EF17 /* cloudsyncwatch */,
+				966714DE23372CE40036EF17 /* cloudsyncwatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9600ECCC2337248200594A2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9600ECE12337248300594A2B /* LaunchScreen.storyboard in Resources */,
+				9600ECDE2337248300594A2B /* Assets.xcassets in Resources */,
+				9600ECD92337248200594A2B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966714D123372CE20036EF17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966714D923372CE40036EF17 /* Assets.xcassets in Resources */,
+				966714D723372CE20036EF17 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966714DD23372CE40036EF17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966714E923372CE50036EF17 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9600ECCA2337248200594A2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9600ECD62337248200594A2B /* ViewController.swift in Sources */,
+				9600ECE9233724A600594A2B /* DataManager.swift in Sources */,
+				9600ECD22337248200594A2B /* AppDelegate.swift in Sources */,
+				9600ECDC2337248200594A2B /* cloudsync.xcdatamodeld in Sources */,
+				9600ECD42337248200594A2B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966714DB23372CE40036EF17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966714E723372CE40036EF17 /* ExtensionDelegate.swift in Sources */,
+				966714F923372D9E0036EF17 /* DataManager.swift in Sources */,
+				966714FB23372EEC0036EF17 /* cloudsync.xcdatamodeld in Sources */,
+				966714E523372CE40036EF17 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		966714E223372CE40036EF17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 966714DE23372CE40036EF17 /* cloudsyncwatch Extension */;
+			targetProxy = 966714E123372CE40036EF17 /* PBXContainerItemProxy */;
+		};
+		966714EC23372CE50036EF17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 966714D223372CE20036EF17 /* cloudsyncwatch */;
+			targetProxy = 966714EB23372CE50036EF17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9600ECD72337248200594A2B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9600ECD82337248200594A2B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9600ECDF2337248300594A2B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9600ECE02337248300594A2B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		966714D523372CE20036EF17 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				966714D623372CE20036EF17 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9600ECE32337248300594A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9600ECE42337248300594A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9600ECE62337248300594A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = cloudsync/cloudsync.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 559UUQT2Q5;
+				INFOPLIST_FILE = cloudsync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shiningdevelopers.cloudsync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9600ECE72337248300594A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = cloudsync/cloudsync.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 559UUQT2Q5;
+				INFOPLIST_FILE = cloudsync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shiningdevelopers.cloudsync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		966714EF23372CE50036EF17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "cloudsyncwatch Extension/cloudsyncwatch Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 559UUQT2Q5;
+				INFOPLIST_FILE = "cloudsyncwatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shiningdevelopers.cloudsync.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		966714F023372CE50036EF17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "cloudsyncwatch Extension/cloudsyncwatch Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 559UUQT2Q5;
+				INFOPLIST_FILE = "cloudsyncwatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shiningdevelopers.cloudsync.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		966714F323372CE50036EF17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 559UUQT2Q5;
+				IBSC_MODULE = cloudsyncwatch_Extension;
+				INFOPLIST_FILE = cloudsyncwatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shiningdevelopers.cloudsync.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		966714F423372CE50036EF17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 559UUQT2Q5;
+				IBSC_MODULE = cloudsyncwatch_Extension;
+				INFOPLIST_FILE = cloudsyncwatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shiningdevelopers.cloudsync.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9600ECC92337248200594A2B /* Build configuration list for PBXProject "cloudsync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9600ECE32337248300594A2B /* Debug */,
+				9600ECE42337248300594A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9600ECE52337248300594A2B /* Build configuration list for PBXNativeTarget "cloudsync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9600ECE62337248300594A2B /* Debug */,
+				9600ECE72337248300594A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		966714EE23372CE50036EF17 /* Build configuration list for PBXNativeTarget "cloudsyncwatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				966714EF23372CE50036EF17 /* Debug */,
+				966714F023372CE50036EF17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		966714F223372CE50036EF17 /* Build configuration list for PBXNativeTarget "cloudsyncwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				966714F323372CE50036EF17 /* Debug */,
+				966714F423372CE50036EF17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9600ECDA2337248200594A2B /* cloudsync.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9600ECDB2337248200594A2B /* cloudsync.xcdatamodel */,
+			);
+			currentVersion = 9600ECDB2337248200594A2B /* cloudsync.xcdatamodel */;
+			path = cloudsync.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9600ECC62337248200594A2B /* Project object */;
+}

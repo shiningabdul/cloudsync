@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14868" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14643"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="cloudsyncwatch" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Stored Content" id="cfB-xv-TaY"/>
+                        <textField width="1" alignment="left" text="Text" id="bg4-Mg-oqA">
+                            <connections>
+                                <action selector="textEntered:" destination="AgC-eL-Hgc" id="alh-EJ-swW"/>
+                            </connections>
+                        </textField>
+                        <button width="1" alignment="left" title="Set" id="yZx-jP-bei">
+                            <color key="backgroundColor" red="0.1176470588" green="0.37377146704520553" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="setTapped" destination="AgC-eL-Hgc" id="ng3-1r-kqH"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="storedContentLabel" destination="cfB-xv-TaY" id="03l-ln-VgU"/>
+                        <outlet property="storedContentTextField" destination="bg4-Mg-oqA" id="u3A-jP-AiS"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="85"/>
+        </scene>
+    </scenes>
+</document>
